@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body{
+            background-color: rgb(21, 3, 68);
+        }
+        
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            list-style-type: none;
+            color: white;
+            padding: 30px 40px 20px 20px;
+        }
+        nav a{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition: 0.4s;
+            margin: 0px 30px 0px 30px;
+        }
+        li{
+            padding: 10px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover{
+            border: 1px solid aqua;
+            border-radius: 20px;
+            background-color: aqua;
+            color: black;
+        }
+        main{
+            display: flex;
+            justify-content: center space-between;
+            
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            width: 600px;
+            color: aqua;
+            margin-left: 70px;
+        }
+        section h1{
+            width: 170px;
+            font-size: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .project{
+            opacity: 0.8;
+        }
+        .project+p{
+            font-family: sans-serif;
+            line-height: 40px;
+            font-size: 25px;
+            text-justify: newspaper;
+            font-weight: bold;
+        }
+        div .dis{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(55, 64, 239);
+            font-weight: bold;
+            border: 1px solid lightblue;
+            border-radius: 30px;
+            width: 150px;
+            text-align: center;
+        }
+        .dis:hover{
+            animation: menu 2s infinite linear;
+        }
+        .logo{
+            position: absolute;
+        }
+        aside img{
+            margin-left: 230px;
+            margin-top: 30px;
+            margin-bottom: 45px;
+            animation: opac 3s infinite linear;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.804);
+        }
+        .vl{
+            border-left: 3px solid white;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 300px;
+        }
+        table,td{
+            border: 1px solid white;
+            border-collapse: collapse;
+            text-align: center;
+            color: white;
+            opacity: 0.7;
+            width: 300px; 
+            margin-top: 80px;
+            padding: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        th{
+            border: 1px solid white;
+            border-collapse: collapse;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            opacity: 1;
+            padding: 5px;
+        }
+        article{
+            text-align: center;
+            color: white;
+            opacity: 0.5;
+            font-size: small;
+            margin-top: 50px;
+        }
+        footer,div{
+            display: flex;
+            justify-content: center;
+        }
+        .project{
+            display: inline;
+            justify-content: end;
+        }
+        .pac{
+            position: absolute;
+            left: 250px;
+            top: 135px;
+        }
+        @media screen and (max-width:1200px){
+            aside{
+                box-shadow: none;
+            }
+            .vl{
+                display: none;
+            }
+        }
+        @media screen and (max-width:992px){
+            aside{
+                display: none;
+            }
+            
+            article{
+                margin-top: 100px;
+            }
+        }
+        @media screen and (max-width:750px){
+            .project{
+                width: 300px;
+            }
+            .logo{
+                position: absolute;
+                top: 80px;
+                height: 150px;
+                width: 150px;
+            }
+            nav a{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+            }
+            div .dis{
+                margin: 0px 70px 0px 0px
+            }  
+        }
+        @keyframes menu {
+            from{
+                background-color: rgb(133, 139, 250);
+            }
+            to{
+                background-color: rgb(55, 64, 239);   
+            }
+        }
+        @keyframes opac{
+            0%{
+                opacity: 1;
+            }
+            25%{
+                opacity : 0.7;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            75%{
+                opacity: 0.7;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body style="scroll-behavior: smooth;">
+    <img class="logo" src="logo.png" width="200px" height="200px">
+
+    <header>
+        <nav>
+            <ul>
+                <a href="Home.html"><li style="border: 1px solid aqua; background-color: aqua; border-radius: 20px; color: black;">Home</li></a>
+                <a href="games.html"><li>Games</li></a>
+                <a href="News.html"><li>News</li></a>
+                <a href="Contact-us.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+                <h1>GAME ° ZONE</h1>
+                <span>
+                    <P class="project">(project encadré par prof : Mdm Assma Oussimmour)</P>
+                    <p>All about gaming, discover the latest gaming news and our favourite games list for this year.</p>
+                </span>
+                <div>
+                    <a class="dis" href="games.html" style="color: white;"><p>START</p></a>    
+                </div>
+        </section>
+        <img class="pac" src="pac.png" width="200px">
+        <div class="vl"></div>
+        <aside>
+            <img src="aside-img.jpg" width="500px" height="450px" >
+        </aside>
+    </main>
+
+    <div>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>school</th>
+            </tr>
+            <tr>
+                <td>©2023</td>
+                <td>ISPSM</td>
+            </tr>
+        </table>
+    </div>
+
+    <article>
+        <p>made by Aimran zaroual</p>
+    </article>
+
+    <footer>
+        <a href="https://www.facebook.com"><ion-icon name="logo-facebook" style="margin: 0px 60px 0px 60px; color:aqua;"></ion-icon></a>
+        <a href="https://www.instagram.com/aimrane zaroual/?hl=fr"><ion-icon name="logo-instagram"style="margin: 0px 60px 0px 60px; color:aqua;"></ion-icon</a>
+        <a href="https://www.youtube.com"><ion-icon name="logo-youtube"  style="margin: 0px 60px 0px 60px; color:aqua;"></ion-icon></a>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

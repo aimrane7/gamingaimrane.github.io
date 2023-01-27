@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMES</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: 50px;
+        }
+        body{
+            background-color: rgb(21, 3, 68);
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            list-style-type: none;
+            color: white;
+            padding: 30px 40px 20px 20px;
+        }
+        nav a{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition: 0.4s;
+            margin: 0px 30px 0px 30px;
+        }
+        li{
+            padding: 10px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover{
+            border: 1px solid aqua;
+            border-radius: 20px;
+            background-color: aqua;
+            color: black;
+        }
+        .title{
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 100px;
+            font-size: 50px;
+            text-decoration: overline;
+            animation: colors 4s infinite linear;
+        }
+        .go{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(55, 64, 239);
+            font-weight: bold;
+            border: 1px solid lightblue;
+            border-radius: 20px;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+            transition: 0.5s;
+        }
+        .go:hover{
+            transform: translateY(5px);
+        }
+        span{
+            display: flex;
+            justify-content: center;
+        }
+        .back{
+            background-size: cover;
+            position: absolute;
+            height: 520px;
+            width: 100%;
+            opacity: 0.5;
+            left: 0%;
+            top: 0%;
+            box-shadow: 0px 5px 5px black;
+        }
+        header{
+            position: relative;
+        }
+        .rec{
+            text-align: center;
+            color: aqua;
+            font-size: 25px;
+            margin-top: 200px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main1{
+            margin-top: 400px;
+            display: flex;
+            justify-content:  center;
+            padding-top: 200px;
+        }
+        .main2{
+            margin-top: 100px;
+            display: flex;
+            justify-content:  center;
+        }
+        div{
+            display: inline-block;
+        }
+        .smg{
+            width: 430px;
+            margin-left: 30px;
+        }
+        .gow{
+            width: 420px;
+        }
+        .disc{
+            width: 420px;
+            color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            margin-left: 30px;
+            
+        }
+        .disc1{
+            width: 420px;
+            color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;    
+        }
+        #vc{
+            color: rgb(255, 118, 118);
+        }
+        #rd{
+            color: rgb(255, 123, 0);
+        }
+        #tl{
+            color: white;
+        }
+        #fh{
+            color: yellowgreen;
+        }
+        #er{
+            color: rgb(255, 255, 125);
+        }
+        video{
+            border-radius: 35px;
+            transition: 0.5s;
+        }
+        video:hover{
+            transform: translateY(10px);
+        }
+        article{
+            text-align: center;
+            color: white;
+            opacity: 0.5;
+            font-size: small;
+            margin-top: 50px;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+        }
+        @media screen and (max-width:1400px){
+            .gow,.disc,.disc1,.smg{
+                width: 300px;
+                margin-left: 3%;
+                border-radius: 10px;
+                padding: 0px 10px 0px 10px;
+            }  
+        }
+        @media screen and (max-width:1000px){
+            .main1,.main2{
+                display: block;
+            }
+            .gow,.disc1,.smg,.disc{
+                margin-left: 30px;
+                width: 550px;
+            }
+            div{
+                padding: 50px 0px 50px 0px;
+            }
+            .main2,.rec{
+                margin-top: 150px;
+            }
+        }
+        @media screen and (max-width:900px){
+            nav a{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+            }
+            .gow,.disc1,.smg,.disc{
+                margin-left: 30px;
+                width: 400px;
+            }
+            div{
+                padding: 50px 0px 50px 0px;
+            }
+            .main2,.rec{
+                margin-top: 50px;
+            }
+            .back{
+                height: 200px;
+            }      
+        }
+        @keyframes colors{
+            0%{
+                color: white;
+            }
+            25%{
+                color: rgb(255, 223, 65);
+            }
+            50%{
+                color: rgb(228, 255, 146);
+            }
+            75%{
+                color: rgb(249, 255, 192);
+            }
+            100%{
+                color: white;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <img class="back" src="bg3.jpg">
+
+    <header>
+        <nav>
+            <ul>
+                <a href="Home.html"><li>Home</li></a>
+                <a href="games.html"><li style="border: 1px solid aqua; background-color: aqua; border-radius: 20px; color: black;">Games</li></a>
+                <a href="News.html"><li>News</li></a>
+                <a href="Contact-us.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+        <h1 class="title">FAVOURITE GAMES</h1>
+        <span>
+            <a href="#gms" class="lien" style="color: white; "><p class="go">Discover</p></a>
+        </span>
+    </header>
+
+
+    <hr width="80%">
+    <p class="rec" style="font-weight: bold;">We recommande for you our favourite game list, hope you like it </p>
+
+
+    <main class="main1">
+        <section id="gms">
+            <div>
+                <video class="gow" height="250px"" controls autoplay muted>
+                    <source src="gow.mp4" type="video/mp4">
+                </video>
+                <p class="disc1" style=" font-size: 22px;">GOD OF WAR</p>
+                <p class="disc1" >God of War is about a war known in Norse mythology as Ragnarok. However, it's much more about the relationship between a father and his son. 
+                    That father just happens to be an unstoppable killing machine .</p>
+            </div>
+            <div>
+                <video class="smg" height="250px" controls autoplay muted>
+                    <source src="valorant.mp4" type="video/mp4">
+                </video>
+                <p class="disc" style="  color: rgb(255, 118, 118);font-size: 22px;">VALORANT</p>
+                <p class="disc" id="vc">Valorant is a free-to-play first-person tactical hero shooter developed and published 
+                    by Riot Games, released on June 2, Valorant takes inspiration from the Counter-Strike series of tactical shooters</p>
+            </div> 
+            <div>
+                <video class="smg" height="250px"  controls autoplay muted>
+                    <source src="rdr2.mp4" type="video/mp4">
+                </video>
+                <p class="disc" style=" color: rgb(255, 123, 0); font-size: 22px;">RED DEAD REDEMPTION 2</p>
+                <p class="disc" id="rd">After a robbery goes wrong in Blackwater,the Van der Linde gang are forced to flee, 
+                    the gang must rob, steal and fight their way across the rugged heartland of America in order to survive.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <main class="main2">
+        <section>
+            <div>
+                <video class="gow" height="250px" controls autoplay muted>
+                    <source src="tlou.mp4" type="video/mp4">
+                </video>
+                <p class="disc1"  style=" color: white; font-size: 22px;">THE LAST OF US</p>
+                <p class="disc1" id="tl">Set in the post-apocalyptic USA, the story is about survivors Joel and Ellie as they survive together their journey 
+                    across the country to find a possible cure for the fungal plague </p>
+            </div>
+            <div>
+                <video class="smg" height="250px"  controls autoplay muted>
+                    <source src="forza.mp4" type="video/mp4">
+                </video>
+                <p class="disc" style=" color: yellowgreen; font-size: 22px;">FORZA HORIZON 5</p>
+                <p class="disc" id="fh">Lead breathtaking expeditions across the vibrant and ever-evolving open world landscapes of Mexico with limitless, 
+                    fun driving action in hundreds of the world's greatest cars.</p>
+            </div> 
+            <div>
+                <video class="smg" height="250px"  controls autoplay muted>
+                    <source src="elden-ring.mp4" type="video/mp4">
+                </video>
+                <p class="disc" style=" color: rgb(255, 255, 125); font-size: 22px;">ELDEN RING</p>
+                <p class="disc" id="er">Elden Ring is an action role-playing game played in a third person perspective, 
+                    with gameplay focusing on combat and exploration. Its a souls like game means its challenging to play</p>
+            </div>    
+        </section>
+    </main>
+
+    <br>
+    <br>
+    <span>
+        <a href="News.html" class="lien" style="color: white; "><p class="go">See News -></p></a>
+    </span>
+
+    <article>
+        <p>made by Aimran zaroual</p>
+    </article>
+    <footer>
+        <a href="https://www.facebook.com"><ion-icon name="logo-facebook" style="margin: 0px 60px 0px 60px; color:aqua;"></ion-icon></a>
+        <a href="https://www.instagram.com><ion-icon name="logo-instagram"style="margin: 0px 60px 0px 60px; color:aqua;"></ion-icon</a>
+        <a href="https://www.youtube.com"><ion-icon name="logo-youtube"  style="margin: 0px 60px 0px 60px; color:aqua;"></ion-icon></a>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
